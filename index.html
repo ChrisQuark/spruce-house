@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#f4f1e9"/>
+  <meta name="description" content="One drawing-based timber house. Explore its raised roof, glazed master loft, rooms and dimensions in a dedicated builder's 3D viewer."/>
+  <title>Spruce House · Builder’s model</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233b4e42'/%3E%3Cpath d='M12 31 32 14l20 17v21H12Zm15 21V36h10v16' stroke='%23efeadd' fill='none' stroke-width='3'/%3E%3C/svg%3E"/>
+  <script type="module" crossorigin src="./assets/index-HG3_ioXT.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BasvQqbU.css">
+</head>
+<body>
+  <header><a class="brand" href="./"><svg viewBox="0 0 32 32"><path d="M4 15 16 5l12 10v14H4ZM13 29V18h6v11"/></svg><span>SPRUCE HOUSE<small>Single home · Builder’s model</small></span></a><div class="header-actions"><button id="drawings-btn">Drawings &amp; dimensions</button><button id="notes-btn">Model notes</button><button id="download-btn" class="outlined">Export 3D ↗</button></div></header>
+  <main>
+    <aside id="sidebar">
+      <div class="intro"><span class="eyebrow">ONE HOME. EVERY DETAIL.</span><h1>A closer<br>look at home.</h1><p>The manufacturer’s plan, brought into three dimensions.</p></div>
+      <div class="facts"><div><b>9.40 × 8.30</b><span>Exterior dimensions · metres</span></div><div><b>300 <small>mm</small></b><span>Spruce timber walls</span></div></div>
+      <div class="section-title">Explore the house <span>01—06</span></div>
+      <div class="view-list">
+        <button data-view="exterior" class="active"><span>01</span>Exterior <i>↗</i></button>
+        <button data-view="living"><span>02</span>Living &amp; kitchen <i>↗</i></button>
+        <button data-view="bedroom"><span>03</span>Ground-floor bedroom <i>↗</i></button>
+        <button data-view="master"><span>04</span>Glazed master loft <i>↗</i></button>
+        <button data-view="landing"><span>05</span>Balcony &amp; stair <i>↗</i></button>
+        <button data-view="bathroom"><span>06</span>Loft bathroom <i>↗</i></button>
+      </div>
+      <div class="section-title">Look inside</div>
+      <div class="cutaway-buttons"><button data-cut="ground">Ground floor</button><button data-cut="loft">Loft</button><button data-cut="section">Section</button><button data-cut="none">Full house</button></div>
+      <label class="switch-row">Roof <input id="roof-toggle" type="checkbox" checked/></label>
+      <label class="switch-row">Furniture <input id="furniture-toggle" type="checkbox" checked/></label>
+      <label class="switch-row">Dimension guides <input id="dimension-toggle" type="checkbox"/></label>
+      <div class="sidebar-foot"><span class="status-dot"></span> R01 · Drawing-based coordination model<p>All model units are metres. Proposed details are identified in Model notes.</p></div>
+    </aside>
+    <section id="viewport" aria-label="Interactive three dimensional house">
+      <canvas id="scene" aria-label="House model: drag to orbit, scroll to zoom" tabindex="0"></canvas>
+      <div class="scene-top"><span id="view-label">Exterior · front garden</span><div><button id="lighting-btn" title="Change lighting">☀ Daylight</button><button id="quality-btn" title="Reduce rendering quality">Quality: High</button><button id="capture-btn" title="Save current view">Save view</button></div></div>
+      <div id="labels" aria-hidden="true"></div>
+      <div class="scene-bottom"><div class="mode-buttons"><button id="orbit-btn" class="active">Orbit</button><button id="walk-btn">Walk inside</button><button id="ruler-btn">Measure</button><button id="front-btn">Front elevation</button></div><p id="controls-hint">Drag to orbit · Scroll to zoom · Right-drag to pan</p></div>
+      <div id="walk-help" hidden><span>WASD to move · Mouse / arrows to look · Shift to move faster</span><button id="exit-walk">Exit walk ✕</button></div>
+      <div id="joystick" hidden aria-label="Movement joystick"><div id="joystick-knob"></div></div>
+      <div id="measure-panel" class="floating-panel" hidden><button class="close" id="close-ruler" aria-label="Close ruler">×</button><span class="eyebrow">MEASURE THE MODEL</span><h2 id="measure-distance">— <small>m</small></h2><p id="measure-instruction">Select two surfaces. Drag to change the view.</p><div class="measure-facts"><span>Horizontal <b id="measure-horizontal">—</b></span><span>Height change <b id="measure-vertical">—</b></span></div><label class="switch-row">Snap to nearby corners <input id="snap-toggle" type="checkbox" checked/></label><div class="mini-actions"><button id="undo-measure">Undo</button><button id="clear-measure">Clear</button><button id="export-measure">Save measurements</button></div><p class="small-note">Distances refer to this model, not site measurements.</p></div>
+      <div id="loading"><span class="eyebrow">SPRUCE HOUSE</span><h2>Opening the house.</h2><p id="load-message">Preparing timber, glass &amp; daylight…</p><div class="loading-bar"></div></div>
+      <div id="toast" role="status" hidden></div>
+    </section>
+  </main>
+  <button id="mobile-menu" aria-expanded="false">Explore &amp; cutaways</button>
+  <dialog id="notes-dialog"><button data-close="notes-dialog" class="close" aria-label="Close notes">×</button><span class="eyebrow">DESIGN BASIS · R01</span><h2>What the builders are seeing.</h2><p>This is a dimensional visual brief for discussion and estimating. It is not a structural, fabrication or construction drawing.</p><div class="note-grid"><article><h3>From the manufacturer’s sketch</h3><p>9.10 × 8.00 m between external wall centres. Width grid: 3.35 / 2.40 / 3.35 m. Rear rooms: 4.10 m centreline depth; bathroom: 2.60 m. Doors, windows and the L-shaped loft stair follow the sketch’s arrangement.</p></article><article><h3>Your confirmed changes</h3><p>External timber walls are 300 mm, replacing the sketch’s 240 mm. Outside dimensions become 9.40 × 8.30 m. The front covering projects 1.00 m from the outside front wall, with side-wall returns. Sage roof and warm spruce finish.</p></article><article><h3>Raised roof &amp; glazed loft</h3><p>Ground-floor clear height 3.000 m; loft floor +3.235 m; eaves wall datum +5.235 m (2.000 m above the loft); roof pitch 30°. The calculated wall-centre ridge is +7.862 m. The upper suite has glazing and a small guarded landing overlooking the double-height living room.</p></article><article><h3>To resolve before construction</h3><p>The sketch’s 3.00 m roof-rise note / 8.235 m overall height does not agree with its 30° pitch and 9.10 m span. Roof build-up, structural members, fixings, glazing, stair/guard compliance, foundations and services require the appointed designers’ details. No additional 2 m is added on top of the sketch’s already raised roof.</p></article></div><p class="source-note">Internal partitions: 165 mm. Timber courses: 310 mm. Furniture, fixtures, finishes and landscaping illustrate the brief. The small “balcony” is the internal loft landing, not an external cantilever. The original 2022 binder describes a smaller steel-frame house; this viewer uses the later timber sketch as you confirmed.</p><button id="notes-to-drawings" class="primary">See drawing &amp; dimension references ↗</button> <button id="dimensions-download" class="outlined">Download dimensions</button></dialog>
+  <dialog id="drawings-dialog"><button data-close="drawings-dialog" class="close" aria-label="Close drawings">×</button><span class="eyebrow">DRAWING REFERENCES</span><h2>One consistent set of dimensions.</h2><div class="drawing-tabs"><button data-drawing="plan" class="active">Model plan</button><button data-drawing="section">Model section</button><button data-drawing="sketch1">Manufacturer plan</button><button data-drawing="sketch2">Manufacturer elevation</button></div><div id="drawing-content"></div><p class="source-note">Original handwritten dimensions govern the grid. The 300 mm external walls, 1.00 m canopy and glazed loft are the owner’s modifications. Diagram dimensions are model dimensions; unresolved details remain proposed.</p></dialog>
+</body>
+</html>
