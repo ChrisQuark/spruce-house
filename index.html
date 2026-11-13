@@ -6,11 +6,11 @@
   <meta name="description" content="One drawing-based timber house. Explore its raised roof, glazed master loft, rooms and dimensions in a dedicated builder's 3D viewer."/>
   <title>Spruce House · Builder’s model</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233b4e42'/%3E%3Cpath d='M12 31 32 14l20 17v21H12Zm15 21V36h10v16' stroke='%23efeadd' fill='none' stroke-width='3'/%3E%3C/svg%3E"/>
-  <script type="module" crossorigin src="./assets/index-B_eZYVvS.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BasvQqbU.css">
+  <script type="module" crossorigin src="./assets/index-1fV3DfuI.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Do-N27TF.css">
 </head>
 <body>
-  <header><a class="brand" href="./"><svg viewBox="0 0 32 32"><path d="M4 15 16 5l12 10v14H4ZM13 29V18h6v11"/></svg><span>SPRUCE HOUSE<small>Single home · Builder’s model</small></span></a><div class="header-actions"><button id="drawings-btn">Drawings &amp; dimensions</button><button id="notes-btn">Model notes</button><button id="download-btn" class="outlined">Export 3D ↗</button></div></header>
+  <header><a class="brand" href="./"><svg viewBox="0 0 32 32"><path d="M4 15 16 5l12 10v14H4ZM13 29V18h6v11"/></svg><span>SPRUCE HOUSE<small>Single home · Builder’s model</small></span></a><div class="header-actions"><button id="site-vision-btn" class="site-vision-trigger" aria-haspopup="dialog">Site vision</button><button id="drawings-btn">Drawings &amp; dimensions</button><button id="notes-btn">Model notes</button><button id="download-btn" class="outlined">Export 3D ↗</button></div></header>
   <main>
     <aside id="sidebar">
       <div class="intro"><span class="eyebrow">ONE HOME. EVERY DETAIL.</span><h1>A closer<br>look at home.</h1><p>The manufacturer’s plan, brought into three dimensions.</p></div>
@@ -46,5 +46,21 @@
   <button id="mobile-menu" aria-expanded="false">Explore &amp; cutaways</button>
   <dialog id="notes-dialog"><button data-close="notes-dialog" class="close" aria-label="Close notes">×</button><span class="eyebrow">DESIGN BASIS · R02</span><h2>What the builders are seeing.</h2><p>This is a dimensional visual brief for discussion and estimating. It is not a structural, fabrication or construction drawing.</p><div class="note-grid"><article><h3>From the manufacturer’s sketch</h3><p>9.10 × 8.00 m between external wall centres. Width grid: 3.35 / 2.40 / 3.35 m. Rear rooms: 4.10 m centreline depth; bathroom: 2.60 m. Ground-floor doors and windows retain the sketch’s arrangement. The stair is revised in R02 as requested.</p></article><article><h3>Your confirmed changes</h3><p>External timber walls are 300 mm, replacing the sketch’s 240 mm. Outside dimensions become 9.40 × 8.30 m. The front covering projects 1.00 m from the outside front wall, with side-wall returns. Sage roof and warm spruce finish. R02 turns the sofa toward a wall-mounted TV beside the fireplace.</p></article><article><h3>Raised roof &amp; glazed loft</h3><p>Ground-floor clear height 3.000 m; loft floor +3.235 m; eaves wall datum +5.235 m (2.000 m above the loft); roof pitch 30°. The calculated wall-centre ridge is +7.862 m. The upper suite has glazing and a small guarded landing overlooking the double-height living room.</p></article><article><h3>To resolve before construction</h3><p>The sketch’s 3.00 m roof-rise note / 8.235 m overall height does not agree with its 30° pitch and 9.10 m span. Roof build-up, structural members, fixings, glazing, stair/guard compliance, foundations and services require the appointed designers’ details. No additional 2 m is added on top of the sketch’s already raised roof.</p></article></div><p class="source-note"><strong>R02 stair proposal:</strong> straight flight along the bedroom wall, 16 equal rises of 202.2 mm, 240 mm goings, approximately 40.1° pitch. Treads are 940 mm wide; clear width between handrails is approximately 846 mm. The 1.30 × 1.04 m landing and shifted loft doorway meet the new flight. Final stair, guard and stove installation details require the appointed designers’ confirmation.</p><p class="source-note">Internal partitions: 165 mm. Timber courses: 310 mm. Furniture, fixtures, finishes and landscaping illustrate the brief. The small “balcony” is the internal loft landing, not an external cantilever. The original 2022 binder describes a smaller steel-frame house; this viewer uses the later timber sketch as you confirmed.</p><button id="notes-to-drawings" class="primary">See drawing &amp; dimension references ↗</button> <button id="dimensions-download" class="outlined">Download dimensions</button></dialog>
   <dialog id="drawings-dialog"><button data-close="drawings-dialog" class="close" aria-label="Close drawings">×</button><span class="eyebrow">DRAWING REFERENCES</span><h2>One consistent set of dimensions.</h2><div class="drawing-tabs"><button data-drawing="plan" class="active">Model plan</button><button data-drawing="section">Model section</button><button data-drawing="sketch1">Manufacturer plan</button><button data-drawing="sketch2">Manufacturer elevation</button></div><div id="drawing-content"></div><p class="source-note">Original handwritten dimensions govern the grid. The 300 mm external walls, 1.00 m canopy, glazed loft and R02 straight stair are the owner’s modifications. Diagram dimensions are model dimensions; unresolved details remain proposed.</p></dialog>
+  <dialog id="site-vision-dialog" aria-labelledby="site-vision-title">
+    <button data-close="site-vision-dialog" class="close" aria-label="Close site vision">×</button>
+    <span class="eyebrow">18 HOMES · A SHARED LANDSCAPE</span>
+    <h2 id="site-vision-title">Life around the houses.</h2>
+    <div class="site-vision-layout">
+      <figure class="site-vision-image"><img src="./images/spruce-house-site-vision.png" width="1313" height="1198" loading="lazy" alt="Bird’s-eye concept of eighteen sage-roofed timber houses: five on each upper plot and four on each middle plot. The existing curved road separates the homes from an orchard and chicken coop on the lower left, food gardens in the centre, and a sauna, hot tub and covered outdoor gym on the lower right."/></figure>
+      <div class="site-vision-details">
+        <div class="site-vision-count"><strong>18</strong><span>timber homes<br>with a garden setting</span></div>
+        <article><h3>Upper plots · 5 + 5</h3><p>Three homes behind two staggered homes on each plot, inspired by the architect’s arrangement.</p></article>
+        <article><h3>Middle plots · 4 + 4</h3><p>Two pairs on each plot, with the porches facing the view.</p></article>
+        <article><h3>Grow, unwind, move.</h3><p>The two lower plots and green area become an orchard and food gardens, with a chicken coop, sauna, hot tub and a small covered outdoor gym.</p></article>
+        <a class="primary site-vision-download" href="./images/spruce-house-site-vision.png" download="Spruce-House-Site-Vision.png">Download image ↓</a>
+        <p class="site-vision-note">AI-generated illustration based on the site drawings. This is a layout concept, not a dimensioned or approved site plan.</p>
+      </div>
+    </div>
+  </dialog>
 </body>
 </html>
