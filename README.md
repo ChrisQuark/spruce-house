@@ -1,11 +1,11 @@
 # Spruce House
 
-A standalone, dimensioned 3D viewer for one timber home with a glazed loft and covered porch.
+A standalone 3D timber-house viewer and illustrative site vision.
 
-[Open the viewer](https://chrisquark.github.io/spruce-house/)
+[Open the viewer](https://chrisquark.github.io/spruce-house/) · [Site vision](https://chrisquark.github.io/spruce-house/?view=site)
 
-The model is a visual coordination brief for builders, not construction or structural documentation. Sources, confirmed dimensions and proposed details are available inside the viewer.
+R04 preserves the manufacturer sketch’s interior when increasing external timber from 240 to 300 mm. The extra thickness grows outward, making the outside dimensions 9.46 × 8.36 m. A gentler quarter-turn stair and a loft doorway 300 mm farther left retain the living room facing the fireplace wall. Model notes, diagram, ruler and exports use the revised dimensions.
 
-R02: compact straight stair; sofa and wall-mounted TV facing the fireplace wall. Updated model diagram and downloadable dimensions. Stair dimensions remain proposed for builder/designer coordination.
+The site image shows 17 equal-sized homes: 5 + 5 on the upper plots and staggered rows of 3 + 4 on the middle plots, with food gardens and wellness amenities below. The image is an illustrative concept; siting, access and permissions require confirmation.
 
-Site vision: an illustrative aerial image of 18 homes (5 + 5 on the upper plots, 4 + 4 below), with orchard, food gardens, chicken coop, sauna/hot tub and covered outdoor gym on the lower land. Open from the Site vision button or use `?view=site`. The single-house R02 model is unchanged.
+This is a visual coordination brief for builders, not construction or structural documentation.
